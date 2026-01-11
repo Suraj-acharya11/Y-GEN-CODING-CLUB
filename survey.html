@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech Event/Workshop Feedback Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Event Name</h1>
+    <p id="description">We value your feedback. Please take a minute to share your experience.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Enter your Name:</label>
+      <input type="text" id="name" placeholder="your name" required >
+      <label id="regid-label" for="regid" >Enter your RegID:</label>
+      <input type="text" id="reg-id" required placeholder="your reg id">
+      <label id="email-label" for="email">Enter your Email:</label>
+      <input type="email" id="email" required placeholder="your email">
+   	<p>Your overall experience:</p>
+     
+     <label id="number-label" for="number">Rate the event:</label>
+
+    <input type="number" id="number" min="1" max="10" placeholder="Rate 1 to 10"><br>
+
+<label>
+  <input type="radio" name="experience" value="excellent"> Good
+</label>
+<br>
+<label>
+  <input type="radio" name="experience" value="good"> Average
+</label>
+<br>
+<label>
+  <input type="radio" name="experience" value="average"> Poor
+</label>
+<p>Your suggestions or comments:</p>
+<textarea rows="5" cols="40" placeholder="Enter your suggestions here..."></textarea>
+<p>Problems faced during the event (if any):</p>
+
+<label>
+  <input type="checkbox" name="issues" value="audio"> Audio issues
+</label><br>
+
+<label>
+  <input type="checkbox" name="issues" value="video"> Video issues
+</label><br>
+
+<label>
+  <input type="checkbox" name="issues" value="network"> Network/Wi-Fi issues
+</label><br>
+
+<label>
+  <input type="checkbox" name="issues" value="management"> Event management issues
+</label>
+<label for="dropdown">How did you hear about this event?</label>
+<select id="dropdown">
+  <option value="email">Email</option>
+  <option value="social-media">Social Media</option>
+  <option value="friends">Friends</option>
+</select>
+
+
+<p>Permission for follow-up:</p>
+
+<label>
+  <input type="checkbox" name="followup" value="yes">
+  I agree to be contacted for future events or follow-ups
+</label><br>
+
+<button type="submit" id="submit">Submit Feedback</button>
+
+
+    </form>
+    
+  </body>
+</html>
